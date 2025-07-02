@@ -49,9 +49,15 @@ def play_game():
     print(STAGES[mistakes])
     underlines = ["_"] * len(secret_word)
     print(" ".join(underlines))
-    print()
+    
     while mistakes < 3:
-        guess = input("Guess a letter: ").lower()
+        while True:
+            guess = input("Guess a letter: ").lower()
+            if len(guess.strip()) > 1:
+                print("Only single letter inputs are allowed")
+                continue
+            elif len(guess.strip()) == 1:
+                break
         if guess not in guessed_letters:
             guessed_letters.append(guess)
             print("You guessed:", guess)
@@ -70,6 +76,13 @@ def play_game():
             mistakes += 1
             print(STAGES[mistakes])
             print(" ".join(underlines))
+
+        if "".join(underlines) != secret_word:
+            continue
+        else:
+            print(f"You correctly guessed the word {secret_word}")
+            break
+            
         
     
 if __name__ == "__main__":
