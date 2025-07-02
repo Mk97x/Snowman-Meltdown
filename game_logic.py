@@ -1,9 +1,9 @@
 import random
 import ascii_art as art
-import game_logic as logic
 
-WORDS = logic.WORDS
-STAGES = logic.STAGES
+
+WORDS = ["python", "git", "github", "snowman", "meltdown"]
+STAGES = art.STAGES
 
 def get_random_word():
     """Selects a random word from the list."""
