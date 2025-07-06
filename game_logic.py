@@ -4,7 +4,7 @@ import ascii_art as art
 
 WORDS = ["python", "git", "github", "snowman", "meltdown"]
 STAGES = art.STAGES
-ALPHABET = "abcdefghijklmnopqrstuvwxyz" # english alphabet to check input is in fact a letter
+ALPHABET = "abcdefghijklmnopqrstuvwxyz" # english alphabet to check input is in fact a letter 
 
 def get_random_word():
     """Selects a random word from the list."""
@@ -13,6 +13,7 @@ def get_random_word():
 def display_game_state(mistakes, secret_word, guessed_letters):
     """Displays the current game state"""
     print(STAGES[mistakes])
+
     
     display_word = "" # empty str to build the underlines-gui
     for letter in secret_word:

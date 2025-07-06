@@ -1,29 +1,45 @@
-# Snowman ASCII Art stages
+# ascii_art snowman
+# added one step to every stage and tried to make him look like he smelts into a puddle
 STAGES = [
-     # Stage 0: Full snowman
-     """
+    # Stage 0: full snowman
+    """
       ___  
      /___\\ 
      (o o) 
      ( : ) 
      ( : ) 
-     """,
-     # Stage 1: Bottom part starts melting
-     """
+    """,
+    # Stage 1 bottom part melts
+    """
       ___  
      /___\\ 
      (o o) 
      ( : ) 
-     """,
-     # Stage 2: Only the head remains
-     """
+     ( . ) 
+
       ___  
      /___\\ 
      (o o) 
-     """,
-     # Stage 3: Snowman completely melted
-     """
+     ( : )- _ 
+    """,
+    # Stage 2
+    """
       ___  
      /___\\ 
-     """
- ]
+     (o o) 
+     ( . ) 
+    
+      ___  
+     /___\\ 
+     (o o)- _
+    """,
+    # Stage 3
+    """
+      ___  
+     /___\\ 
+      . .  
+    
+      ___  
+     /___\\- __
+    """
+]
